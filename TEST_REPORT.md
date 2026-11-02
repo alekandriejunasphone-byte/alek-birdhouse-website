@@ -24,3 +24,20 @@ The first run found a missing favicon on the local iframe test harness; its refe
 No Git repository or remote is configured in this project. Nothing has been published or had its repository visibility changed. The GitHub Actions workflow was checked locally but has not executed on GitHub. No exact public URL exists, so live response headers, hosted iframe permission and actual Google Sites account behaviour remain unverified. Use GOOGLE_SITES_OPTION_2.md after publishing to verify the hosted result, with the Google Sites button-link fallback if framing is blocked.
 
 The previous pasted HTML embeds are preserved but are not used or deployed by the current workflow. The current iframe checks use the ordinary linked pages by URL.
+
+
+## Published-site verification — 2 November 2026
+
+Repository: https://github.com/alekandriejunasphone-byte/alek-birdhouse-website
+
+Live website: https://alekandriejunasphone-byte.github.io/alek-birdhouse-website/
+
+Successful Pages deployment: https://github.com/alekandriejunasphone-byte/alek-birdhouse-website/actions/runs/41387184452
+
+The original published website commit is 177dd2cfbe4d0bf4e93b1893b81364b4c6e6e7af. Subsequent documentation updates do not change the deployed HTML, CSS, JavaScript or images.
+
+**815 checks passed against the live HTTPS website**, with zero captured console errors, JavaScript exceptions or HTTP errors in the final run. These exercised all five pages at 1440, 768, 390 and 320 pixel widths, all main menu destinations from each page, browser back/forward, refresh, brand and previous/next links, local file links, images and alt text, mobile overflow, all 20 step disclosures, the expand/collapse button and the guide download.
+
+The real hosted pages were then loaded in a browser iframe, with navigation to all five pages verified. Homepage response: HTTP 200. No X-Frame-Options or Content-Security-Policy header blocking framing was present. The first live run exposed an automation timing issue during an iframe reload; the test was adjusted to await full navigation, and the entire live suite was rerun successfully. No website design changes were needed.
+
+The user approved public repository creation and publishing. Nothing was inserted into or published in an actual Google Site; school account settings and the Google Sites editor must still be checked when inserting the URL. The previous local-only limitations above describe the earlier pre-deployment checks; the live verification in this section supersedes them for GitHub hosting and browser iframe support.

@@ -1,9 +1,9 @@
-# GitHub Pages setup
+# GitHub Pages deployment
 
-The existing `.github/workflows/pages.yml` is now manual only. It publishes the linked five-page site and assets, excluding old HTML embeds and local test pages. No push-triggered publication is configured.
+The public repository is https://github.com/alekandriejunasphone-byte/alek-birdhouse-website . GitHub Pages is configured to use GitHub Actions.
 
-Follow the GitHub instructions in `GOOGLE_SITES_OPTION_2.md` and `README.md`. Choose **Settings → Pages → GitHub Actions**, then manually **Actions → Deploy static birdhouse website → Run workflow** when ready to publish.
+The website is https://alekandriejunasphone-byte.github.io/alek-birdhouse-website/ . Initial deployment succeeded: https://github.com/alekandriejunasphone-byte/alek-birdhouse-website/actions/runs/41387184452 .
 
-No local Git repository, remote, deployed URL or repository visibility change was created. If you have an existing repository elsewhere, copy/commit these files into that checkout while preserving its unrelated contents. Include the hidden `.github` folder. Use the exact URL GitHub returns after the deployment succeeds.
+For later changes, commit and push, then manually choose **Actions → Deploy static birdhouse website → Run workflow → main → Run workflow**. The workflow does not run automatically on pushes. It publishes the five normal pages, compatibility redirects, assets and construction download, excluding local test pages and legacy large embeds.
 
-[Official GitHub Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+See GOOGLE_SITES_OPTION_2.md for the exact URL to put into Google Sites. No Google Site was published as part of this deployment.
