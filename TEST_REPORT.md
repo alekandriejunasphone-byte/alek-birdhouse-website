@@ -41,3 +41,10 @@ The original published website commit is 177dd2cfbe4d0bf4e93b1893b81364b4c6e6e7a
 The real hosted pages were then loaded in a browser iframe, with navigation to all five pages verified. Homepage response: HTTP 200. No X-Frame-Options or Content-Security-Policy header blocking framing was present. The first live run exposed an automation timing issue during an iframe reload; the test was adjusted to await full navigation, and the entire live suite was rerun successfully. No website design changes were needed.
 
 The user approved public repository creation and publishing. Nothing was inserted into or published in an actual Google Site; school account settings and the Google Sites editor must still be checked when inserting the URL. The previous local-only limitations above describe the earlier pre-deployment checks; the live verification in this section supersedes them for GitHub hosting and browser iframe support.
+
+
+## Content-only revision — 2 November 2026
+
+All five pages were shortened in the existing student voice. Main paragraph text dropped from 920 to 458 words (50.2%). Total content dropped from 1828 to 1167 words (36.2%); retained headings, tool lists, measurements, captions and safety points account for the difference. No new class events were added.
+
+An HTML parser confirmed identical tag structures and attributes in all five source fragments. CSS, JavaScript, builder code and all image assets matched the preceding commit byte-for-byte. All 20 construction steps and the measurement table remain. The text download and legacy embeds were refreshed to match. Local browser suite: 267 checks passed, zero failures. Final minor wording edits were checked by the same structure and asset invariants.
